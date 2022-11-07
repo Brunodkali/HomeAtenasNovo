@@ -58,7 +58,6 @@
 .av-livros {
     position: fixed;
     bottom: 0;
-    margin-bottom: 80px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -67,7 +66,7 @@
 .av-livros p{
    margin-bottom: 20px;
    margin-left: 65px;
-   color: #000;
+   color: #55544e;
    font-size: 16px;
 }
 
@@ -76,28 +75,14 @@
 }
 
 .img-aluno p {
-    color: #000;
+    color: #55544e;
     font-size: 16px;
 }
 
-.av-livros button {
-    width: calc(90% - 10px);
-    border: 1px solid #000;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 50px;
-    padding: 6px;
-    transition: all 0.2s ease-in-out;
-}
-
-.av-livros button:hover {
-    border: 1px solid #fff;
-    color: #fff;
-    background-color: #cdb1e9;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    box-shadow: inset 0 0 0 transparent, 0 0 0.2em #000;
-}
+/* hr {
+    color: #55544e;
+    height: 1px;
+} */
 
 /* Menu superior */
 
@@ -108,10 +93,6 @@
 .menu2 {
     width: calc(87% - 10px);
     height: 100%;
-    /*background-color: #cdb1e9;
-    border-radius: 15px;
-    box-shadow: inset 0 0 1em transparent, 0 0 0.5em #000
-    background-color: #7625c9;*/;
 }
 .central-input {
     display: flex;
@@ -160,8 +141,8 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(240, 236, 236);
-    width: 50px!important;
-    height: 50px!important;
+    width: 60px!important;
+    height: 60px!important;
     border-radius: 50%;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.47);
     -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.47);
@@ -184,7 +165,8 @@
     color: #cdb1e9;
 }
 
-.text-center{
+.text-center p{
+    margin-top: 10px;
     font-size: 12px;
     text-align: center;
 }
@@ -192,4 +174,61 @@
 input[type="checkbox"]{
     display: none;
 }
- 
+
+/* Formação livro */
+
+.centralizar-livros {
+    display: flex;
+    justify-content: end;
+    width: calc(100% - 110px);
+}
+
+.div-livro-externo{
+    width: calc(80% - 10px);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+.div-livro{
+    width: 32%;
+    background-color: #fff;
+    border-radius: 0px 10px;
+    border: 2px ridge #cdb1e9;
+    margin: 30px;
+}
+
+.item{
+    display: inline-flex;
+    width: 100%;
+}
+
+.capa{
+    width: calc(80% - 65%);
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.titulo{
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(61, 59, 59);
+    margin-left: 10px;
+}
+
+.status{
+    display: inline-flex;
+    justify-content: space-around;
+    color:rgb(187, 186, 186);
+    font-size: 10px;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.status div{
+    width: 100px;
+    text-align: center;
+    
+}
