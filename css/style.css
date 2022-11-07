@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+/* Menu lateral */
+#logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    background-color: #cdb1e9;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: inset 0 0 1em transparent, 0 0 0.5em #000
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li a {
+    transition: background 0.2s;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 15px;
+}
+.menu ul li a i{
+   font-size: 22px;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(49, 54, 85);
+    border-radius: 5px;
+}
+
+.calc {
+    width: calc(52% - 10px);
+    border-radius: 0;
+}
+
+.av-livros {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.av-livros p{
+   margin-bottom: 20px;
+   margin-left: 65px;
+   color: #000;
+   font-size: 16px;
+}
+
+.img-aluno {
+    margin-top: 50px;
+}
+
+.img-aluno p {
+    color: #000;
+    font-size: 16px;
+}
+
+.av-livros button {
+    width: calc(90% - 10px);
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.av-livros button:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #cdb1e9;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: inset 0 0 0 transparent, 0 0 0.2em #000;
+}
+
+/* Menu superior */
+
+.dimensao {
+    display: flex;
+    justify-content: end;
+}
+.menu2 {
+    width: calc(87% - 10px);
+    height: 100%;
+    /*background-color: #cdb1e9;
+    border-radius: 15px;
+    box-shadow: inset 0 0 1em transparent, 0 0 0.5em #000
+    background-color: #7625c9;*/;
+}
+.central-input {
+    display: flex;
+    justify-content: center;
+}
+.central-input input{
+    border-radius: 10px;
+    width: calc(30% - 10px);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 16px;
+    border: 2px solid #cdb1e9;
+}
+
+.central-input i {
+    margin-top: 45px;
+    margin-left: 20px;
+}
+
+/* Div FIltro */
+
+.centralizar-filtro {
+    display: flex;
+    justify-content: center;
+}
+
+.filtro {
+    margin-top: 30px;
+    width: 60%;
+}
+
+.fast-filter
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-input {
+    display: none;
+}
+
+.radio-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 236, 236);
+    width: 50px!important;
+    height: 50px!important;
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.47);
+    color: #7E7B72;
+    cursor: pointer;
+}
+
+.radio-label i {
+    font-size: 30px;
+}
+
+.radio-input:checked ~ .radio-label
+{
+    color: #000;
+    background-color: #cdb1e9;
+}
+.radio-input:checked ~ .title
+{
+    color: #cdb1e9;
+}
+
+.text-center{
+    font-size: 12px;
+    text-align: center;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+ 
